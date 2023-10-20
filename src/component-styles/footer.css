@@ -1,0 +1,14 @@
+#footer-main-container{
+width: 100%;
+display: flex;
+border: 10px solid #232F3E;
+justify-content: center;
+align-items: center;
+background-color:#232F3E;
+}
+
+#footer-container{
+    width: 100%;
+    height: 60px;
+   background-color: whitesmoke;
+}

@@ -1,0 +1,11 @@
+#project-main-card-container{
+    width: 100%;
+   
+}
+
+.project-card-container{
+    text-align: center;
+    padding: 5px 0px;
+    font-size: 18px;
+    background-color:transparent;
+}

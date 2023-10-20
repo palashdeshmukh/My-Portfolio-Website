@@ -1,0 +1,11 @@
+.certification-main-container{
+    padding: 12px 0px;
+}
+.certification-container{
+    text-align: center;
+    padding: 10px 0px;;
+}
+.inner-certification-container{
+    display: flex;
+    justify-content: center;
+}

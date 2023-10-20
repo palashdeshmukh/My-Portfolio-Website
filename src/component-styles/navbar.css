@@ -1,0 +1,109 @@
+
+#nav-main-container{
+    width: 100%;
+    display: flex;
+    top:0;
+    position:sticky;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+    background-color:#232F3E;
+}
+#nav-main-container:hover{
+
+}
+#nav-container{
+    
+    width: 85%;
+    display: block;
+    border-radius:5px;
+    -webkit-border-radius:5px;
+    -moz-border-radius:5px;
+    -ms-border-radius:5px;
+    -o-border-radius:5px;
+}
+#nav-list-container{
+    width: 100%;
+    list-style: none;
+    padding-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding: 0;
+    display: flex;
+    justify-content:space-around;
+}
+.nav-list-item{
+    padding: 10px;
+}
+.nav-link-item{
+    text-decoration: none;
+    color:whitesmoke;
+    font-weight: 800;
+    font-size: 24px;
+    font-family: 'Abril Fatface', serif;
+    letter-spacing:2px;
+}
+.nav-name-text{
+    display: none;
+    color: white !important ;
+    text-align: center;
+    padding: 0px 0px;
+    letter-spacing:2px;
+    font-family: 'Abril Fatface', serif;
+
+
+}
+@media (max-width:1068px){
+    .nav-link-item{
+        padding: 0px;
+        font-size: 16px;
+    }
+}
+@media (max-width:768px){
+    .nav-name-text{
+        display: block;
+    }
+    #nav-container{
+        padding: 5px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+}
+    #nav-list-container{
+        display: none;
+
+    }
+    .nav-list-item{
+       width: 100%;
+       padding: 0;
+       border-radius: 5px;
+       background-color:white;
+       color:#080402;
+       display: flex;
+       justify-content: center;
+       -webkit-border-radius: 5px;
+       -moz-border-radius: 5px;
+       -ms-border-radius: 5px;
+       -o-border-radius: 5px;
+}
+    .nav-list-item:hover{
+    background-color:#080402;
+}
+    .nav-link-item{
+        padding: 12px;
+        color:black;
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+    }
+    .nav-link-item:hover{
+          color: whitesmoke;
+    }
+    #nav-list-container{
+     flex-direction: column;
+     gap: 5px;
+    }
+}
