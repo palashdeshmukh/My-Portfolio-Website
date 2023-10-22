@@ -1,5 +1,5 @@
 #contact-form-main-container{
-padding: 15px;
+padding: 10px;
 }
 #contact-from-container{
   padding: 12px;
@@ -13,9 +13,11 @@ padding: 15px;
   -o-border-radius:5px;
 }
 #form-heading-h1{
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-margin:5px 0px;
-text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:0px 0px;
+    padding: 5px ;
+    text-align: center;
+   
 }
 #heading-paragraph{
 margin: 10px 0px;

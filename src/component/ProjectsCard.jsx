@@ -8,16 +8,25 @@ class ProjectsCard extends Component {
     const settings = {
       dots: true,
       infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToShow: 4,
+      slidesToScroll: 4,
       autoplay: true,
-      speed: 1500,
+      speed: 10000,
       responsive: [
         {
           breakpoint: 1068,
           settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3, // Change to 2 for smoother transitions
+            infinite: true,
+            dots: false
+          }
+        },
+        {
+          breakpoint: 768, // You can add more breakpoints if needed
+          settings: {
             slidesToShow: 2,
-            slidesToScroll: 2, // Change to 2 for smoother transitions
+            slidesToScroll: 2,
             infinite: true,
             dots: false
           }

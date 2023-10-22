@@ -1,14 +1,118 @@
 #footer-main-container{
 width: 100%;
 display: flex;
-border: 10px solid #232F3E;
 justify-content: center;
 align-items: center;
-background-color:#232F3E;
+padding: 5px 0;
+background-color: #232F3E;
 }
 
 #footer-container{
+    width: 90%;
+}
+#footer-container-part-one{
+display: flex;
+flex-wrap:nowrap;
+padding: 10px 10px;
+border-bottom: 1px solid whitesmoke;
+}
+.footer-part-one-heading{
+display: flex;
+align-items: center;
+
+}
+.footer-part-one-heading h2{
+    margin: 0;
+    color:whitesmoke;
+    display: block;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-family: sans-serif;
+
+}
+.part-one-class-container{
+    width: 70%;
+    padding: 5px 5px;
+
+}
+.footer-part-one-icons{
+    width: 30%;
+    padding: 5px 5px;
+
+}
+#part-one-logo-ul-container{
+    list-style: none;
+    padding-left: 0;
+    margin:0;
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+    align-items: center;
+
+}
+#footer-social-icon-link{
+    list-style: none;
+    font-size: 24px;
+    display: block;
+    color:whitesmoke;
+    padding: 5px 8px;
+
+}
+.footer-table-link{
+  list-style: none;
+  color:whitesmoke;
+  font-size: 14px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+#footer-table-ul-list{
+    list-style: none;
+    padding-left: 0;
+    padding:5px;
+}
+.footer-table-ul-head{
+    color: whitesmoke;
+    font-size: 22px;
+    text-transform:capitalize;
+}
+.footer-table-li-list-items{
+    padding: 8px 0px;
+    letter-spacing:1.5px;
+}
+#footer-container-part-two{
+    padding: 10px;
+    display: flex;
+    justify-content:space-between;
+}
+#footer-copy-write-container{
+    padding: 5px 8px;
+}
+#footer-copy-write-container p{
+    color:whitesmoke;
+    margin: 0;
+    font-size: 16px;
     width: 100%;
-    height: 60px;
-   background-color: whitesmoke;
+    padding: 5px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family:sans-serif;
+}
+
+@media (max-width: 768px) {
+
+    #footer-container-part-one{
+        flex-wrap: wrap;
+    }
+    .footer-part-one-heading{
+        justify-content: center
+    }
+   
+    .part-one-class-container {
+        width: 100%;
+    }
+    .footer-part-one-icons{
+        width: 100%;
+
+    }
 }

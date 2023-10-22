@@ -15,10 +15,18 @@ function ContactForm() {
          Password: '0B03BAF851426BD498FE75F37DAB504C842F',
          Host: 'smtp.elasticemail.com',
          Port: 2525,
-         To: 'palashdeshmukh54321@gmail.com',
-         From: formState.myEmail,
-         Subject: `${formState.fname} viewed your portfolio`,
-         Body: `${formState.fname} connected to you over email`,
+         To: 'palash.deshmukh02@gmail.com',
+         From:'palash.deshmukh.portfolio@gmail.com',
+         Subject: `${formState.fname} ${formState.lname} viewed your portfolio`,
+         Body:`
+         The information is as follows:
+         First Name: ${formState.fname}
+         Last Name: ${formState.lname}
+         Mobile Number: ${formState.contactNumber}
+         Email Address: ${formState.myEmail}
+         The message from ${formState.fname} ${formState.lname} is:
+         ${formState.message}
+         `,
       };
       
   if (window.Email) {
@@ -29,7 +37,6 @@ function ContactForm() {
     });
   }
 }
-
    return (
       <>
          <div id='contact-form-main-container'>

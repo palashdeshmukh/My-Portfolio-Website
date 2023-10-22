@@ -7,30 +7,23 @@
     z-index: 1;
     align-items: center;
     justify-content: center;
-    padding: 20px 0px;
+    padding: 12px 0px;
     background-color:#232F3E;
 }
-#nav-main-container:hover{
-
-}
 #nav-container{
-    
     width: 85%;
-    display: block;
-    border-radius:5px;
-    -webkit-border-radius:5px;
-    -moz-border-radius:5px;
-    -ms-border-radius:5px;
-    -o-border-radius:5px;
+    padding: 5px 0px;
 }
 #nav-list-container{
     width: 100%;
+    margin: 0;
     list-style: none;
     padding-left: 0;
     padding-top: 0;
     padding-right: 0;
+    padding-bottom: 0;
     padding: 0;
-    display: flex;
+    display:flex;
     justify-content:space-around;
 }
 .nav-list-item{
