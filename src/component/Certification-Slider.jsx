@@ -8,6 +8,17 @@ import GoogleDigitalWorkshop from '../assets/certificate/google.jpg'
 import TypingCertificate from '../assets/certificate/typing_page.jpg' 
 import NasscomCertificate from '../assets/certificate/NasscomCertification.png'
 import SurvenCertificate from '../assets/certificate/suvenIntership.png'
+
+const certificates = [
+  { src: NasscomCertificate, alt: "Nasscom Certificate" },
+  { src: ProgrammingInjava, alt: "Programming in Java Certificate" },
+  { src: JavaDataStructure, alt: "Java Data Structure Certificate" },
+  { src: SurvenCertificate, alt: "Surven Certificate" },
+  { src: GoogleDigitalWorkshop, alt: "Google Digital Workshop Certificate" },
+  { src: HtmlCertificate, alt: "HTML Certificate" },
+  { src: TypingCertificate, alt: "Typing Certificate" },
+];
+
 export default class CertificationSlider extends Component {
   render() {
     const settings = {
@@ -29,24 +40,20 @@ export default class CertificationSlider extends Component {
     };
     return (
       <div className="certification-main-container">
-        <Slider {...settings}>        
-        <div className="certification-container"><div className="inner-certification-container"><img style={{display:"block"}} src={NasscomCertificate} alt="programming-in-java-certificate" width="100%"/></div></div>
-        <div className="certification-container"><div className="inner-certification-container"><img style={{display:"block"}} src={NasscomCertificate} alt="programming-in-java-certificate" width="100%"/></div></div>
-        <div className="certification-container"><div className="inner-certification-container"><img style={{display:"block"}} src={ProgrammingInjava} alt="programming-in-java-certificate" width="100%"/></div></div>
-        <div className="certification-container"><div className="inner-certification-container"><img style={{display:"block"}} src={ProgrammingInjava} alt="programming-in-java-certificate" width="100%"/></div></div>
-        <div className="certification-container"><div className="inner-certification-container"><img style={{display:"block"}} src={JavaDataStructure} alt="programming-in-java-certificate" width="100%"/></div></div>
-        <div className="certification-container"><div className="inner-certification-container"><img style={{display:"block"}} src={JavaDataStructure} alt="programming-in-java-certificate" width="100%"/></div></div>
-        <div className="certification-container"><div className="inner-certification-container"><img style={{display:"block"}} src={SurvenCertificate} alt="surven-certificate" width="100%"/></div></div>
-        <div className="certification-container"><div className="inner-certification-container"><img style={{display:"block"}} src={SurvenCertificate} alt="surven-certificate" width="100%"/></div></div>
-        <div className="certification-container"><div className="inner-certification-container"><img style={{display:"block"}} src={GoogleDigitalWorkshop} alt="programming-in-java-certificate" width="100%"/></div></div>
-        <div className="certification-container"><div className="inner-certification-container"><img style={{display:"block"}} src={GoogleDigitalWorkshop} alt="programming-in-java-certificate" width="100%"/></div></div>
-        <div className="certification-container"><div className="inner-certification-container"><img style={{display:"block"}} src={HtmlCertificate} alt="html-certificate" width="100%"/></div></div>
-        <div className="certification-container"><div className="inner-certification-container"><img style={{display:"block"}} src={HtmlCertificate} alt="html-certificate" width="100%"/></div></div>
-        <div className="certification-container"><div className="inner-certification-container"><img style={{display:"block"}} src={TypingCertificate} alt="html-certificate" width="100%"/></div></div>
-        <div className="certification-container"><div className="inner-certification-container"><img style={{display:"block"}} src={TypingCertificate} alt="html-certificate" width="100%"/></div></div>
-      
-        </Slider>
-      </div>
+      <Slider {...settings}>
+        {certificates.map((certificate, index) => (
+          <div key={index} className="certification-container">
+            <div className="inner-certification-container">
+              <img
+                style={{ display: "block", maxWidth: "100%" }}
+                src={certificate.src}
+                alt={certificate.alt}
+              />
+            </div>
+          </div>
+        ))}
+      </Slider>
+    </div>
     );
   }
 }

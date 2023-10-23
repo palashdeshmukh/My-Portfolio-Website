@@ -1,5 +1,6 @@
 #project-main-card-container{
     width: 100%;
+    overflow: hidden;
     padding: 12px 0px;
 }
 

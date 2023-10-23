@@ -1,5 +1,6 @@
 .certification-main-container{
     padding: 12px 0px;
+    overflow: hidden;
 }
 .certification-container{
     text-align: center;
