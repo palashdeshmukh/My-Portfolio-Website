@@ -16,7 +16,6 @@ function Footer () {
     <div id='footer-main-container'>
       <div id='footer-container'>
         <div id='footer-container-part-one'>
-          <div className='part-one-class-container footer-part-one-heading'><h2>Palash Deshmukh</h2></div>
           <div className=' footer-part-one-icons' >
           <ul id='part-one-logo-ul-container'>
         {socialMediaLinks.map((link, index) => (

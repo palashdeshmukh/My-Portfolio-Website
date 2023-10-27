@@ -30,13 +30,9 @@ align-items: center;
     font-family: sans-serif;
 
 }
-.part-one-class-container{
-    width: 70%;
-    padding: 5px 5px;
 
-}
 .footer-part-one-icons{
-    width: 30%;
+    width: 100%;
     padding: 5px 5px;
 
 }
@@ -92,10 +88,8 @@ align-items: center;
     color:whitesmoke;
     margin: 0;
     width: 100%;
-    padding: 5px;
-    letter-spacing: 2px;
+    padding: 10px 0px;
     text-align: center;
-    font-family:sans-serif;
 }
 
 @media (max-width: 768px) {
@@ -109,6 +103,7 @@ align-items: center;
    
     .part-one-class-container {
         width: 100%;
+        display: none;
     }
     .footer-part-one-icons{
         width: 100%;

@@ -11,12 +11,20 @@ import SurvenCertificate from '../assets/certificate/suvenIntership.png'
 
 const certificates = [
   { src: NasscomCertificate, alt: "Nasscom Certificate" },
+  { src: NasscomCertificate, alt: "Nasscom Certificate" },
+  { src: ProgrammingInjava, alt: "Programming in Java Certificate" },
   { src: ProgrammingInjava, alt: "Programming in Java Certificate" },
   { src: JavaDataStructure, alt: "Java Data Structure Certificate" },
+  { src: JavaDataStructure, alt: "Java Data Structure Certificate" },
+  { src: SurvenCertificate, alt: "Surven Certificate" },
   { src: SurvenCertificate, alt: "Surven Certificate" },
   { src: GoogleDigitalWorkshop, alt: "Google Digital Workshop Certificate" },
+  { src: GoogleDigitalWorkshop, alt: "Google Digital Workshop Certificate" },
+  { src: HtmlCertificate, alt: "HTML Certificate" },
   { src: HtmlCertificate, alt: "HTML Certificate" },
   { src: TypingCertificate, alt: "Typing Certificate" },
+  { src: TypingCertificate, alt: "Typing Certificate" },
+
 ];
 
 export default class CertificationSlider extends Component {

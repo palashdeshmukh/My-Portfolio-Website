@@ -1,43 +1,39 @@
-#contact-form-main-container{
-padding: 10px;
+#contact-form-main-container {
+    padding: 10px;
 }
-#contact-from-container{
-  padding: 12px;
-  width: 100%;
-  border-radius:5px;
-  text-align: center;
-  box-shadow: 0px 0px 5px 0px gray;
-  -webkit-border-radius:5px;
-  -moz-border-radius:5px;
-  -ms-border-radius:5px;
-  -o-border-radius:5px;
-}
-#form-heading-h1{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin:0px 0px;
-    padding: 5px ;
-    text-align: center;
-   
-}
-#heading-paragraph{
-margin: 10px 0px;
-text-align: center;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
+#contact-from-container {
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 5px 0px gray;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
-#firstLast-container{
-    display: flex;
-    flex-wrap: nowrap;
-}
-.labelBox-container-50{
-    display: flex;
-    width: 50%;
+
+#form-heading-h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0px 0px;
     padding: 5px;
-    text-align: left;
-    flex-direction: column;
+    text-align: center;
+}
+
+#heading-paragraph {
+    margin: 10px 0px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#firstLast-container {
+    display: flex;
     flex-wrap: nowrap;
 }
-.labelBox-container-100{
+
+.labelBox-container-50,
+.labelBox-container-100 {
     display: flex;
     width: 100%;
     padding: 5px;
@@ -45,15 +41,19 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
     flex-direction: column;
     flex-wrap: nowrap;
 }
+#firstName,#lastName{
+}
 
-.labelBox-container label{
+.labelBox-container label {
     margin: 8px 0px;
-    letter-spacing:1px;
+    letter-spacing: 1px;
     color: gray;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
-input{
+
+input,
+textarea {
+    width: 100%;
     padding: 12px;
     border: 1px solid lightgray;
     outline: none;
@@ -65,33 +65,19 @@ input{
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
+
 input[type='email'] {
     text-transform: lowercase;
-  }
-  
-textarea{
-    padding: 12px;
-    font-size: 18px;
-    text-transform: capitalize;
-    color: gray;
-    border: 1px solid lightgray;
-    border-radius: 3px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
 }
-#contact-form-subBtn-container{
+
+#contact-form-subBtn-container {
     display: flex;
     justify-content: center;
-    flex-wrap: nowrap
+    flex-wrap: nowrap;
 }
 
-#contactSubmit{
+#contactSubmit {
     margin: 15px 0px;
     border-radius: 5px;
     color: whitesmoke;
@@ -104,4 +90,21 @@ textarea{
     cursor: pointer;
     font-size: 18px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+    /* Adjust styling for screens up to 768px wide */
+    .labelBox-container-50,
+    .labelBox-container-100 {
+        width: 100%;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+    }
+
+    #contactSubmit {
+        width: 100%;
+    }
 }
