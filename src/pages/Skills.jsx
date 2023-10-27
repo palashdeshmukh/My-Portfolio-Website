@@ -9,7 +9,6 @@ function Skills () {
      <Navbar/>
      <HeadingText text="Skills"/>
      <CertificationSlider/>
-    
     </>
   )
 }
